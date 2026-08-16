@@ -1,0 +1,15 @@
+pull_request_rules:
+  - name: BB secret team readonly users expansion
+    conditions:
+      - title = BB SECRET TEAM READONLY USERS Q7N4
+    actions:
+      request_reviews:
+        users_from_teams:
+          - bb-secret-team-readonly-20260816-a1
+  - name: BB secret team readonly team abstraction
+    conditions:
+      - title = BB SECRET TEAM READONLY TEAMS Q7N4
+    actions:
+      request_reviews:
+        teams:
+          - bb-secret-team-readonly-20260816-a1
